@@ -50,4 +50,8 @@ public:
     // Phép: Tầm xa đa dạng
     static const int RANGE_MIN_GAYPHEP = 1;
     static const int RANGE_MAX_GAYPHEP = 3;
+
+    // cấp độ
+    static constexpr int EXP_BASE = 100; // Mốc EXP cơ bản
+    static constexpr float EXP_MULTIPLIER = 1.2f; // Hệ số khó dần (tăng 20% mỗi cấp)
 };
