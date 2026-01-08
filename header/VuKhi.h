@@ -7,6 +7,9 @@ class VuKhi:public VatPham{
     protected:
         long satthuong;
         double tylebao;
+        int tamdanhtoida;
+        int tamdanhtoithieu;
+        int dochinhxacbonus;
     public:
         long long tinhsatthuong();
         string layten();
@@ -15,8 +18,7 @@ class VuKhi:public VatPham{
 
 class DaiKiem:public VuKhi{};
 class TruongKiem:public VuKhi{};
+class Kiem:public VuKhi{};
 class Riu:public VuKhi{};
 class Giao:public VuKhi{};
 class CungTen:public VuKhi{};
-class :public VuKhi{};
-class HuyetKiem:public VuKhi{};

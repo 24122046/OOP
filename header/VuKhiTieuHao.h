@@ -6,4 +6,4 @@ class Vukhitieuhao:public VuKhi{
 };
 
 class GayPhep:public VuKhi{};
-class SachCo:public VuKhi{};
+class QuyenTruong:public VuKhi{};

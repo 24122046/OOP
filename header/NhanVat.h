@@ -8,20 +8,21 @@ using namespace std;
 class NhanVat{
     protected:
         string ten;
+        //các chỉ số trong game
         long satthuongcoban;
-
         long long mautoida;
-        long long mau;
-        
+        long long mauhientai;
         long noinangtoida;
-        long noinang;
-
+        long noinanghientai;
         long giap;
-
+        HeThongCapDo capdo;
+        int tamdichuyen;
+        int dochinhxac;
+        int tylenedon;
+        // các trang bị
         VuKhi* vukhidangcam = nullptr;
         ThuCuoi* thucuoidangcam = nullptr;
 
-        HeThongCapDo capdo;
         TuiDo tuido;
         
         friend class HeThongCapDo;
