@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <iostream>
 #include "VatPham.h"
@@ -15,7 +16,7 @@ class VuKhi:public VatPham{
 class DaiKiem:public VuKhi{};
 class TruongKiem:public VuKhi{};
 class Riu:public VuKhi{};
-class Giao:public Vukhi{};
+class Giao:public VuKhi{};
 class CungTen:public VuKhi{};
 class :public VuKhi{};
 class HuyetKiem:public VuKhi{};

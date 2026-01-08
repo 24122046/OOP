@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include "ThuCuoi.h"
 #include "VuKhi.h"
@@ -22,15 +23,17 @@ class NhanVat{
 
         HeThongCapDo capdo;
         TuiDo tuido;
+        
+        friend class HeThongCapDo;
     public:
-        NhanVat(string,long, long long, long,VuKhi*,thucuoi*,TuiDo*){};
-        NhanVat(const nhanvat &nhanvatkhac);
+        NhanVat(string,long, long long, long,VuKhi*,ThuCuoi*,TuiDo*){};
+        NhanVat(const NhanVat &nhanvatkhac);
         NhanVat operator=(const NhanVat&);
         virtual ~NhanVat();
         void hoimau();
         void trangbivukhi(VuKhi* vukhi);
         void trangbithucuoi(ThuCuoi* thucuoi);
-        virtual long long tancong(nhanvat* muctieu);
+        virtual long long tancong(NhanVat* muctieu);
         virtual long long bitancong();
 };
 

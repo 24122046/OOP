@@ -1,3 +1,4 @@
+#pragma once
 #include "VuKhi.h"
 class Vukhitieuhao:public VuKhi{
     protected:
@@ -5,4 +6,4 @@ class Vukhitieuhao:public VuKhi{
 };
 
 class GayPhep:public VuKhi{};
-class SachCo:public Vukhi{};
+class SachCo:public VuKhi{};

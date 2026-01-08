@@ -1,3 +1,4 @@
+#pragma once
 class HeThongCapDo{
     private:
         int cap;
