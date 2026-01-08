@@ -1,10 +1,9 @@
 #pragma once
 #include "VatPham.h"
+#include "NhanVat.h"
 class BinhMau:public VatPham{
     protected:
-        long luonghoi; 
+        long luonghoi = 50; 
     public:
-        void chinhluongmauhoi(long luongmoi){
-            luonghoi = luongmoi;
-        }
+        long luonghoimau();
 };
