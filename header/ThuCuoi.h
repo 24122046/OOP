@@ -5,11 +5,16 @@ using namespace std;
 class ThuCuoi:public VatPham{
     protected:
         string ten;
-        double tylenedon;
-        int sucben;
-        int tancong;
+        double tylenedonbonus;
+        int tamdichuyenbonus;
+        int tocdobonus;
     public:
-        int hotrotancong(){
-            return tancong;
-        }
+        ThuCuoi(string,double,int,int);
+        virtual ~ThuCuoi();
+
+        string layten();
+        double laytylenedon();
+        int laytamdichuyen();
+        int laytocdo();
+
 };

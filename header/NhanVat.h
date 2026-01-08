@@ -15,6 +15,7 @@ class NhanVat{
         long noinangtoida;
         long noinanghientai;
         long giap;
+        long tocdo;
         HeThongCapDo capdo;
         int tamdichuyen;
         int dochinhxac;
@@ -26,14 +27,19 @@ class NhanVat{
         TuiDo tuido;
         
     public:
+        // các hàm cơ bản
         NhanVat(string,long, long long, long,VuKhi*,ThuCuoi*,TuiDo*){};
         NhanVat(const NhanVat &nhanvatkhac);
         NhanVat operator=(const NhanVat&);
         virtual ~NhanVat();
         void hoimau();
+
+
         int nhankinhnghiem(long long);
+
         void trangbivukhi(VuKhi* vukhi);
         void trangbithucuoi(ThuCuoi* thucuoi);
+
         virtual long long tancong(NhanVat* muctieu);
         virtual long long bitancong();
 };

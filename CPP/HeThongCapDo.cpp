@@ -7,10 +7,11 @@ void HeThongCapDo::tinhkinhnghiemyeucau(){
     this ->kinhnghiemyeucau = long(this->kinhnghiemyeucau * this->cap * 1.2);
 }
 void HeThongCapDo::nhankinhnghiem(long long sokinhnghiem){
-    while (sokinhnghiem + this->kinhnghiemhientai > this->kinhnghiemyeucau)
-    {
         this ->kinhnghiemhientai += sokinhnghiem;
-
-    }
-    
-}
+        while (this->kinhnghiemhientai >= this->kinhnghiemyeucau)
+        {
+            this ->kinhnghiemhientai -= kinhnghiemyeucau;
+            this->lencap(1);
+            this ->tinhkinhnghiemyeucau();
+        }
+    }    
