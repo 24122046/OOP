@@ -3,8 +3,13 @@
 #include "VatPham.h"
 class TuiDo{
     protected:
+        int succhuatoida;
+        int soluonghientai;
         vector<VatPham*> tuido;
     public:
-        void themvatpham(VatPham*);
-        void bovatpham(VatPham*);
+        TuiDo(int);
+        ~TuiDo();
+        bool themvatpham(VatPham*);
+        void bovatpham(int idx);
+        int laysoluong();
 };

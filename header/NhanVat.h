@@ -28,7 +28,7 @@ class NhanVat{
         
     public:
         // các hàm cơ bản
-        NhanVat(string,long, long long, long,VuKhi*,ThuCuoi*,TuiDo*){};
+        NhanVat(string,long, long long, long,VuKhi*,ThuCuoi*,TuiDo*);
         NhanVat(const NhanVat &nhanvatkhac);
         NhanVat operator=(const NhanVat&);
         virtual ~NhanVat();
