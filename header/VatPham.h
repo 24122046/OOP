@@ -1,5 +1,5 @@
 #include <string>
-#include "NhanVat.h"
+#pragma once
 #include "TuiDo.h"
 using namespace std;
 class VatPham{
@@ -8,5 +8,6 @@ class VatPham{
         long giaban;
         friend class TuiDo;
     public:
-        virtual void sudung(NhanVat* nguoichoi) = 0;
+        VatPham();
+        virtual ~VatPham();
 };

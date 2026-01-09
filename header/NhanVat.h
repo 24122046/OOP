@@ -33,7 +33,7 @@ class NhanVat{
         NhanVat(const NhanVat &nhanvatkhac);
         NhanVat operator=(const NhanVat&);
         virtual ~NhanVat();
-        void hoimau();
+        void hoimau(long);
 
 
         int nhankinhnghiem(long long);

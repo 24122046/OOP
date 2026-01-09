@@ -1,6 +1,7 @@
 #pragma once
 #include "VuKhi.h"
-class Vukhitieuhao:public VuKhi{
+#include "TrangBi.h"
+class Vukhitieuhao:public TrangBi{
     protected:
         long noinangtieuhao;
 };

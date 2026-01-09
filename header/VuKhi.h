@@ -2,8 +2,9 @@
 #include <string>
 #include <iostream>
 #include "VatPham.h"
+#include "TrangBi.h"
 using namespace std;
-class VuKhi:public VatPham{
+class VuKhi:public TrangBi{
     protected:
         long satthuong;
         double tychimangbonus;
