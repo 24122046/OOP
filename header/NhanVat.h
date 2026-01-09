@@ -20,6 +20,7 @@ class NhanVat{
         int tamdichuyen;
         int dochinhxac;
         int tylenedon;
+        double tylechimang;
         // các trang bị
         VuKhi* vukhidangcam = nullptr;
         ThuCuoi* thucuoidangcam = nullptr;

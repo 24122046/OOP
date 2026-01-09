@@ -6,12 +6,12 @@ using namespace std;
 class VuKhi:public VatPham{
     protected:
         long satthuong;
-        double tylebao;
+        double tychimangbonus;
         int tamdanhtoida;
         int tamdanhtoithieu;
         int dochinhxacbonus;
     public:
-        long long tinhsatthuong();
+        long long laysatthuong();
         string layten();
         void hienthi();
 };
