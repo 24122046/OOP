@@ -16,10 +16,3 @@ class VuKhi:public TrangBi{
         string layten();
         void hienthi();
 };
-
-class DaiKiem:public VuKhi{};
-class TruongKiem:public VuKhi{};
-class Kiem:public VuKhi{};
-class Riu:public VuKhi{};
-class Giao:public VuKhi{};
-class CungTen:public VuKhi{};
