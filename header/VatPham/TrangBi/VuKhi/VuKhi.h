@@ -12,6 +12,8 @@ class VuKhi:public TrangBi{
         int tamdanhtoithieu;
         int dochinhxacbonus;
     public:
+        VuKhi(string,long,long,double,int,int,int);
+        virtual ~VuKhi();
         long laysatthuong();
         double laytychimangbonus();
         int laytamdanhtoida();

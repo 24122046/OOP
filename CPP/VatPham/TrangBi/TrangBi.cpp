@@ -1,4 +1,4 @@
-#include "../../../header/VatPham/TrangBi/TrangBi.h"
+#include "TrangBi/TrangBi.h"
 #include "NhanVat.h"
 TrangBi::TrangBi(string ten,long gia):VatPham(ten,gia){};
 

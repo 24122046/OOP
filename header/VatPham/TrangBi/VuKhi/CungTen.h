@@ -1,2 +1,6 @@
 #include "VuKhi.h"
-class CungTen:public VuKhi{};
+class CungTen:public VuKhi{
+    public:
+        CungTen();
+        ~CungTen();
+};
