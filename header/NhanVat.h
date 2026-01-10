@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "TrangBi.h"
 #include "ThuCuoi.h"
 #include "VuKhi.h"
 #include "TuiDo.h"
@@ -38,8 +39,8 @@ class NhanVat{
 
         int nhankinhnghiem(long long);
 
-        void trangbivukhi(VuKhi* vukhi);
-        void trangbithucuoi(ThuCuoi* thucuoi);
+        void gantrangbi(TrangBi*);
+        void thaotrangbi();
 
         virtual long long tancong(NhanVat* muctieu);
         virtual long long bitancong();

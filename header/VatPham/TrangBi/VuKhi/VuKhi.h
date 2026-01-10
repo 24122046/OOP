@@ -12,7 +12,11 @@ class VuKhi:public TrangBi{
         int tamdanhtoithieu;
         int dochinhxacbonus;
     public:
-        long long laysatthuong();
-        string layten();
+        long laysatthuong();
+        double laytychimangbonus();
+        int laytamdanhtoida();
+        int laytamdanhtoithieu();
+        int laydochinhxacbonus();
+
         void hienthi();
 };

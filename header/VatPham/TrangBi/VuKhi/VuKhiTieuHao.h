@@ -4,4 +4,6 @@
 class Vukhitieuhao:public TrangBi{
     protected:
         long noinangtieuhao;
+    public:
+        long laynoinangtieuhao();
 };

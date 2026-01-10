@@ -8,6 +8,8 @@ class VatPham{
         long giaban;
         friend class TuiDo;
     public:
-        VatPham();
+        VatPham(string,long);
         virtual ~VatPham();
+        string layten();
+        long laygiaban();
 };
