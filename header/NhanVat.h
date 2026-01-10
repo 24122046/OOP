@@ -44,7 +44,3 @@ class NhanVat{
         virtual long long tancong(NhanVat* muctieu);
         virtual long long bitancong();
 };
-
-class DauSi:public NhanVat{};
-class PhapSu:public NhanVat{};
-class Cungsi:public NhanVat{};
