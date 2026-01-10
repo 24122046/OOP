@@ -8,6 +8,6 @@ class HeThongCapDo{
         long long kinhnghiemyeucau = GameConfig::KinhNghiemCoBan;
     public:
         void lencap(int);
-        void nhankinhnghiem(long long);
+        int nhankinhnghiem(long long);
         void tinhkinhnghiemyeucau();
 };

@@ -7,12 +7,15 @@ void HeThongCapDo::lencap(int socap){
 void HeThongCapDo::tinhkinhnghiemyeucau(){
     this ->kinhnghiemyeucau = long(this->kinhnghiemyeucau * this->cap * GameConfig::HeSoLenKinhNghiem);
 }
-void HeThongCapDo::nhankinhnghiem(long long sokinhnghiem){
+int HeThongCapDo::nhankinhnghiem(long long sokinhnghiem){
+        int count = 0;
         this ->kinhnghiemhientai += sokinhnghiem;
         while (this->kinhnghiemhientai >= this->kinhnghiemyeucau)
         {
             this ->kinhnghiemhientai -= kinhnghiemyeucau;
             this->lencap(1);
             this ->tinhkinhnghiemyeucau();
+            count += 1;
         }
+        return count;
     }    
