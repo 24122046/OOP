@@ -5,10 +5,9 @@
 #include "VuKhi.h"
 #include "TuiDo.h"
 #include "HeThongCapDo.h"
-using namespace std;
 class NhanVat{
     protected:
-        string ten;
+        std::string ten;
         //các chỉ số trong game
         long satthuongcoban;
         long long mautoida;
@@ -19,8 +18,8 @@ class NhanVat{
         long tocdo;
         HeThongCapDo capdo;
         int tamdichuyen;
-        int dochinhxac;
-        int tylenedon;
+        double dochinhxac;
+        double tylenedon;
         double tylechimang;
         // các trang bị
         VuKhi* vukhidangcam = nullptr;
@@ -35,6 +34,15 @@ class NhanVat{
         NhanVat operator=(const NhanVat&);
         virtual ~NhanVat();
         void hoimau(long);
+        //các hàm tăng chỉ số
+        void tangsatthuong(long);
+        void tangmautoida(long);
+        void tangnoinangtoida(long);
+        void tanggiap(long);
+        void tangtocdo(long);
+        void tangdochinhxac(double);
+        void tangtylenedon(double);
+        void tangtylechimang(double);
 
 
         int nhankinhnghiem(long long);
@@ -43,5 +51,5 @@ class NhanVat{
         void thaotrangbi();
 
         virtual long long tancong(NhanVat* muctieu);
-        virtual long long bitancong();
+        virtual long long bitancong(long long satthuong);
 };
