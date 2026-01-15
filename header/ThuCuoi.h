@@ -8,7 +8,7 @@ class ThuCuoi:public VatPham{
         int tamdichuyenbonus;
         int tocdobonus;
     public:
-        ThuCuoi(string,double,int,int);
+        ThuCuoi(std::string,double,int,int);
         virtual ~ThuCuoi();
 
         std::string layten();

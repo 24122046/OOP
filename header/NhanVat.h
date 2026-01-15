@@ -4,23 +4,13 @@
 #include "ThuCuoi.h"
 #include "VuKhi.h"
 #include "TuiDo.h"
+#include "HeThongChiSo.h"
 #include "HeThongCapDo.h"
-class NhanVat{
+#include "Unit.h"
+class NhanVat:public Unit{
     protected:
-        std::string ten;
-        //các chỉ số trong game
-        long satthuongcoban;
-        long long mautoida;
-        long long mauhientai;
-        long noinangtoida;
-        long noinanghientai;
-        long giap;
-        long tocdo;
-        HeThongCapDo capdo;
-        int tamdichuyen;
-        double dochinhxac;
-        double tylenedon;
-        double tylechimang;
+        HeThongCapDo bangcapdo;
+        HeThongChiSo bangchiso;
         // các trang bị
         VuKhi* vukhidangcam = nullptr;
         ThuCuoi* thucuoidangcam = nullptr;
@@ -34,16 +24,6 @@ class NhanVat{
         NhanVat operator=(const NhanVat&);
         virtual ~NhanVat();
         void hoimau(long);
-        //các hàm tăng chỉ số
-        void tangsatthuong(long);
-        void tangmautoida(long);
-        void tangnoinangtoida(long);
-        void tanggiap(long);
-        void tangtocdo(long);
-        void tangdochinhxac(double);
-        void tangtylenedon(double);
-        void tangtylechimang(double);
-
 
         int nhankinhnghiem(long long);
 
@@ -51,5 +31,5 @@ class NhanVat{
         void thaotrangbi();
 
         virtual long long tancong(NhanVat* muctieu);
-        virtual long long bitancong(long long satthuong);
+        virtual long long bitancong(long long );
 };
