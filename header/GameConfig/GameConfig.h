@@ -1,8 +1,5 @@
-#pragma once
 
-#pragma once
-
-class GameConfig {
+class GameConfig{   
 public:
     // ==================================================
     // =============== ĐẤU SĨ (TANKER) ==================
