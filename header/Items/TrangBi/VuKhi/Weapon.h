@@ -6,7 +6,7 @@
 using namespace std;
 class Weapon:public Equipment{
     protected:
-        long Damage;
+        long damage;
         double critRateBonus;
         int maxAttackRange;
         int minAttackRange;

@@ -6,6 +6,7 @@ class HealthPotion:public Consumable{
     protected:
         long healAmount = 50; 
     public:
-        long healAmount();
+        long getHealAmount();
+        void setHealAmount(long);
         void consume(Character*) override;
 };
