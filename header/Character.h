@@ -1,8 +1,8 @@
 #pragma once
 #include <string>
-#include "Equipment/Equipment.h"
+#include "Equipment.h"
 #include "Mount.h"
-#include "Weapon/Weapon.h"
+#include "Weapon.h"
 #include "Inventory.h"
 #include "Stats.h"
 #include "LevelSystem.h"

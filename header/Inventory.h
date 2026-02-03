@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "../Items.h"
+#include "Items.h"
 class Inventory{
     protected:
         int capacity;

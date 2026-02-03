@@ -1,6 +1,6 @@
 #pragma once
 #include "Character.h"
-#include "../GameConfig/GameConfig.h"
+#include "GameConfig.h"
 class LevelSystem{
     private:
         int level = 1;
