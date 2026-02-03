@@ -1,4 +1,4 @@
-#include "../Items.h"
+#include "Items.h"
 #include "Character.h"
 class Equipment:public Items{
     public:
