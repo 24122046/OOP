@@ -6,7 +6,9 @@ class Unit{
         long long mauhientai;
         long noinangtoida;
         long noinanghientai;
+        // Tọa ĐỘ
+        int x;
+        int y;
     public:
-
-
+        bool isAlive();
 };

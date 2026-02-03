@@ -9,5 +9,11 @@ class HeThongChiSo{
         double tylenedoncoban;
         double tylechimangcoban;
     public:
-
+        long laysasatthuong();
+        long laygiap();
+        long laytocdo();
+        int laytamdichuyen();
+        double laydochinhxac();
+        double laytylenedon();
+        double laytylechimang();
 };
