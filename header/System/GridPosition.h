@@ -11,10 +11,10 @@ struct GridPosition
     }
 
     bool operator==(GridPosition& position){
-        return x == position.x and y == position.y;
+        return x == position.x && y == position.y;
     }
     bool operator!=(GridPosition& position){
-        return x != position.x or y != position.y;
+        return x != position.x || y != position.y;
     }
     
     double khoangcach(GridPosition& position){
