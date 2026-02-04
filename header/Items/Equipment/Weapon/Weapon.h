@@ -22,5 +22,8 @@ class Weapon:public Equipment{
         double getAccuraccyBonus();
         int getStaminaCost();
 
+        void equip(Character*) override;
+        void unequip(Character*) override;
+        
         void display();
 };

@@ -9,6 +9,9 @@ class Unit{
 
         long maxStamina;
         long currentStamina;
+
+        long maxMana;
+        long currentMana;
         
         GridPosition position;
     public:

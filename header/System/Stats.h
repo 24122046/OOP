@@ -2,7 +2,8 @@ struct Stats{
         long damage;
         long armor;
         long speed;
-        int moveRange;
+        int minMoveRange;
+        int maxMoveRange;
         double accuracy;
         double dodgeRate;
         double critRate;
