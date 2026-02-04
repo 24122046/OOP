@@ -1,5 +1,5 @@
 #pragma once
-#include "characterEnums.h"
+#include "Character/characterEnums.h"
 
 struct VitalStats {
     int baseHP;
