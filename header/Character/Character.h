@@ -7,10 +7,12 @@
 #include "Stats.h"
 #include "LevelSystem.h"
 #include "Unit.h"
+#include "characterEnums.h"
 class Character:public Unit{
     protected:
         LevelSystem level;
         Stats stats;
+        characterType Type;
         // các trang bị
         Weapon* weapon = nullptr;
         Mount* mount = nullptr;
@@ -23,6 +25,8 @@ class Character:public Unit{
         Character(const Character &nhanvatkhac);
         Character operator=(const Character&);
         virtual ~Character();
+
+        characterType getType();
 
         void heal(long);
 
